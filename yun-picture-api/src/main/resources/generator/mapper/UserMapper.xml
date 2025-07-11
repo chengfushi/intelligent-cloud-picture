@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chengfu.yunpictureapi.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.chengfu.yunpictureapi.model.entity.User">
+            <id property="id" column="id" />
+            <result property="userAccount" column="userAccount" />
+            <result property="userPassword" column="userPassword" />
+            <result property="userName" column="userName" />
+            <result property="userAvatar" column="userAvatar" />
+            <result property="userProfile" column="userProfile" />
+            <result property="userRole" column="userRole" />
+            <result property="editTime" column="editTime" />
+            <result property="createTime" column="createTime" />
+            <result property="updateTime" column="updateTime" />
+            <result property="isDelete" column="isDelete" />
+            <result property="vipExpireTime" column="vipExpireTime" />
+            <result property="vipCode" column="vipCode" />
+            <result property="vipNumber" column="vipNumber" />
+            <result property="shareCode" column="shareCode" />
+            <result property="inviteUser" column="inviteUser" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,userAccount,userPassword,userName,userAvatar,userProfile,
+        userRole,editTime,createTime,updateTime,isDelete,
+        vipExpireTime,vipCode,vipNumber,shareCode,inviteUser
+    </sql>
+</mapper>
